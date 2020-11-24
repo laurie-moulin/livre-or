@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
+
+body{
+    background-image: url(ressources/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* MAIN */
+
+h1{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.514);
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+
+main img{
+  width: 5%;
+  margin-left: 24%;
+  opacity: 0.6;
+}
+
+

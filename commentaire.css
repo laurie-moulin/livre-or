@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-image: url(ressources/montainnight.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN */
+
+
+
+.container_title{
+    width: 20%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_title h1{
+    font-family: 'News Cycle', sans-serif;
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.514);
+  }
+  
+.container_title img{
+    width: 20%;
+    opacity: 0.6;
+    margin-left: 5%;
+  }
+
+  /* FORMULAIRE */
+
+
+.container{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+}
+
+.container_form{
+    text-align: center;
+    width: 60%;
+   
+}
+
+.form_:hover{
+    background-color: rgba(0, 0, 0, 0.363);
+    transition: 0.7s;
+}
+
+.form_{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.068);
+    animation: animation linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animation{
+    0% {
+      transform:  translate(0px,100px) ;
+      opacity: 0;
+    }
+    100% {
+      transform:  translate(0,0px);
+      opacity: 1;
+    }
+  }
+
+legend{
+    font-family: 'Unica One', cursive;
+    color: white;
+    font-size: 2em;
+    text-decoration: overline;
+  }
+
+.form_ input:focus{
+    outline: none;
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+}
+
+textarea
+{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    color: white;
+    width: 70%;
+    white-space: normal;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 1.2em;
+    font-family: 'Unica One', cursive;
+}
+
+.form_ label{
+    color: white;
+}
+
+
+
+.button_{
+    font-family: 'Unica One', cursive;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}
+
+.button_:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 1.5s;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* TABLE */
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+}
+
+table,td,th{
+
+    
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+table{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    
+}
+
+.table{
+
+    width: 90%;
+    height: 70vh;
+    overflow-y:scroll;
+}
+
+td{
+    padding: 1%;
+}
+
+.key{
+    position: sticky;
+    top: 0%;
+    background-color: rgb(49, 49, 49);
+    color: rgba(255, 255, 255, 0.753);
+}
+
+
+
+  ::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(8, 8, 8, 0.562); 
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+}
+
+
