@@ -76,8 +76,8 @@ main{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.068);
     animation: animation linear 1s;
     animation-iteration-count: 1;
@@ -115,6 +115,10 @@ main{
     width: 45%;
     height: 30px;
     border-bottom: 1px solid black;
+}
+
+.form_ label{
+  color: white;
 }
 
 input::placeholder {

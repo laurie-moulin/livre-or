@@ -1,6 +1,6 @@
 <?php
 
-$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', '');
 
 if(isset($_POST['forminscription'])){
     $login = htmlspecialchars($_POST['login']);

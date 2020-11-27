@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', '');
 
 if(isset($_SESSION['id'])) {   
     $requser = $bdd->prepare("SELECT * FROM utilisateurs WHERE login = ?");
@@ -16,6 +16,7 @@ if(isset($_SESSION['id'])) {
             $date = date("Y-m-d");
             $insertcomm = $bdd->prepare("INSERT INTO commentaires(commentaire, id_utilisateur, date) VALUES(?, ?, ?)");
             $insertcomm->execute(array($commentaire, $_SESSION['id'], $date));
+            header("location:livre-or.php");
 
         }
     }

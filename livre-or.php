@@ -48,7 +48,7 @@ if(isset($_SESSION['id'])){ ?>
 
 <?php
 
-$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', '');
 
 
 $data = $bdd->prepare('SELECT commentaire, login as "utilisateur",date as "posté le jour/mois/année"  FROM commentaires INNER JOIN utilisateurs ON commentaires.id_utilisateur = utilisateurs.id ORDER BY date DESC');

@@ -2,7 +2,7 @@
 
 session_start();
  
-$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=livreor', 'root', '');
 
 if(isset($_SESSION['id'])) {  
   $requser = $bdd->prepare("SELECT * FROM utilisateurs WHERE id = ?");
@@ -107,10 +107,10 @@ if(isset($_SESSION['id'])) {
 <label>Login :</label><br>
 <input type="text" name="newlogin" placeholder="login"  value="<?php echo $user['login']; ?>" /><br><br>
 
-<label>Mot de passe :</label><br>
+
 <input type="password" name="newmdp1" placeholder="password" id="password" /><br>
 <br>
-<label>Confirmation - mot de passe :</label><br>
+
 <input type="password" name="newmdp2" placeholder="Confirmation du mot de passe" />
 <br><br><br>
 
